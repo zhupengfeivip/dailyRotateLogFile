@@ -5,7 +5,8 @@ const path = require('path');
 
 /**
  * 
- * 实际测试运行结果，日志最多保留maxFiles个，每个日志大小maxSize
+ * 实际测试运行结果，日志最多保留maxFiles个，每个日志大小maxSize，如果一天内日志过多，超过了maxSize，则可能会删除其他日志的数据。
+ * 整个目录下最多maxFiles个，
  * 
  **/
 
